@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+}
+
+.container {
+    border: 2px solid white;
+    width: 40%;
+    min-width: 450px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.container .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#newTask {
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+#newTask input {
+    color: black;
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    border: 2px solid #d1d3d4;
+    font-weight: 500;
+    height: 45px;
+    position: relative;
+    font-size: 16px;
+    border-radius: 3px;
+}
+#newTask input:focus {
+    outline: none;
+    border-color: #8052ec;
+}
+#push {
+    position: relative;
+    width: 20%;
+    height: 45px;
+    float: right;
+    background-color: #8052ec;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+}
+
+#tasks {
+    background-color: #ffffff;
+    width: 100;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#tasks #task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+#taskName {
+    cursor: pointer;
+}
+#delete {
+    border: none;
+}
+#delete img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+.noData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
